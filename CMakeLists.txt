@@ -148,7 +148,7 @@ endif()
 
 # Add source files
 file(GLOB FILES_SRC CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c")
-add_library(${TARGET_NAME} STATIC ${FILES_SRC})
+add_library(${TARGET_NAME} SHARED ${FILES_SRC})
 
 # Code coverage
 if(${GCOV})
